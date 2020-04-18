@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <!-- main css -->
+ <link rel="stylesheet" href="./css/main.css">
+
+ <title>OOP Course Form Project</title>
+ <style>
+ </style>
+</head>
+
+<body>
+ <div class="container">
+  <div class="row">
+   <div class="col-11 mx-auto text-center my-5">
+    <form class="my-5" id="customer-form">
+     <h3 class="text-capitalize">get a free course</h3>
+     <h3>Practice OOP in JavaScript</h3>
+     <div class="feedback text-center  text-capitalize">
+      calculating.....
+     </div>
+     <!-- single input -->
+     <div class="input-group my-3">
+      <div class="input-group-prepend">
+       <span class="input-group-text"><i class="fas fa-user"></i></span>
+      </div>
+      <input type="text" class="form-control text-capitalize name" id="name" placeholder="customer name">
+     </div>
+     <!-- end of single input -->
+     <!-- single input -->
+     <div class="input-group my-3">
+      <div class="input-group-prepend">
+       <span class="input-group-text"><i class="fas fa-book"></i></span>
+      </div>
+      <input type="text" class="form-control text-capitalize course" placeholder="course" id="course">
+     </div>
+     <!-- end of single input -->
+     <!-- single input -->
+     <div class="input-group my-3">
+      <div class="input-group-prepend">
+       <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+      </div>
+      <input type="text" class="form-control text-capitalize author" placeholder="author" id="author">
+     </div>
+     <!-- end of single input -->
+     <button type="submit" class="btn btn-block submitBtn text-uppercase mt-4">submit</button>
+    </form>
+
+    <div class="loading">
+     <img src="./image/loading.gif" alt="">
+    </div>
+    
+<div class="row customer-list"></div>
+
+
+<div id="practice" class="col-11 mx-auto col-md-6 col-lg-4 my-3">
+    <div class="card text-left">
+    <center>
+     <img src="./image/web1.jpg" class="card-img-top" alt="">
+     
+     <img width="30%" src="./rating/rating2.jpg"  alt="">
+    </center>
+ 
+     <div class="card-body">
+      <!-- customer name -->
+      <h6 class="text-capitalize "><span class="badge badge-warning mr-2">name:</span>
+      <span id="customer-name"> Fareena Ehtesham </span></h6>
+
+      <!-- end of customer name -->
+      <!-- customer course-->
+      <h6 class="text-capitalize my-3"><span class="badge badge-success mr-2">course :</span>
+      <span id="customer-course">MERN Stack Development</span></h6>
+
+      <!-- end of customer name -->
+      <!-- Author -->
+      <h6 class="text-capitalize"><span class="badge badge-danger mr-2">author :</span>
+      <span id="course-author">Angela</span></h6>
+      <!-- end of customer name -->
+     </div>
+    </div>
+
+    <!-- single customer -->
+
+
+
+   </div>
+
+  </div>
+ </div>
+</div>
+
+ <script src="./js/app.js"></script>
+</body>
+
+</html>
